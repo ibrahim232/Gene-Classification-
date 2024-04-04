@@ -1,131 +1,44 @@
-<h2><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hello🙏🏻, I'm Anmol Pratap Singh! <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
+<h2><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hello🙏🏻, I'm Ibrahim Abdelnasar! <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
-<p><em>Associate Technical Lead at <a href="https://www.oneorigin.us/">OneOrigin
+<p><em>Medical Advisor <a href="https://eureka-digital.co.uk/">Eureka Digital
 </a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/misteranmol?label=Follow)](https://twitter.com/intent/follow?screen_name=misteranmol)
-[![Linkedin: anmol](https://img.shields.io/badge/-anmol-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/anmol-p-singh/)](https://www.linkedin.com/in/anmol098/)
-![GitHub followers](https://img.shields.io/github/followers/anmol098?label=Follow&style=social)
-[![website](https://img.shields.io/badge/Website-46a2f1.svg?&style=flat-square&logo=Google-Chrome&logoColor=white&link=https://anmolsingh.me/)](https://anmolsingh.me/)
-![](https://visitor-badge.glitch.me/badge?page_id=anmol098.anmol098)
-![Waka Readme](https://github.com/anmol098/anmol098/workflows/Waka%20Readme/badge.svg)
+# Machine Learning for Cancer Prediction Using RNA-seq Data
 
-### 📫 Like to meet me?
+## Project Overview
 
-Pick a slot if you'd like to meet me and chat about anything you are passionate about - but make sure to describe the agenda
+In this project, we delve into the domain of bioinformatics with the goal of predicting cancer types using machine learning techniques. The core of our analysis is an RNA-seq Gene Expression dataset, which plays a pivotal role in our predictive modeling.
 
-<a href="https://calendly.com/anmol098/30min" target="_blank"><img width="498" alt="meet_link" src="https://user-images.githubusercontent.com/15426564/144297439-f530f383-e73e-41e0-9914-a9b7d3f432e5.png"></a>
+### Dataset Description
 
-👇 Hit in your console or terminal to connect with me.
+The dataset underpinning our project consists of RNA-seq Gene Expression data across various cancer types. RNA sequencing (RNA-seq) provides us with a comprehensive view of the transcriptome, offering insights into the quantity and sequences of RNA in a sample. In the context of cancer research, analyzing these expression profiles can reveal patterns that distinguish between different types of cancers, thus aiding in their identification and characterization.
 
-```bash
-npx anmol
-```
-**👆 This command line tool can be found at [npx anmol](https://github.com/anmol098/npx_card)**
+**Structure**: The dataset is structured with samples as rows and gene count values as columns. Each row represents a cancer sample, encapsulating the expression levels of thousands of genes. The columns, apart from the last one, correspond to these genes and their respective count values within each sample.
+  
+**Target Variable**: The last column in our dataset is of particular interest as it contains the labels for our predictive model – the cancer categories. This categorical variable will serve as the target for our machine learning algorithms, guiding them in learning the complex relationships between gene expressions and cancer types.
 
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
+- **KIRC**: Kidney Renal Clear Cell Carcinoma. This is a type of kidney cancer that originates in the lining of the proximal convoluted tubule, a part of the very small tubes in the kidney that transport primary urine.
 
-```javascript
-const anmol = {
-    pronouns: "He" | "Him",
-    code: ["Javascript", "Python", "Java", "PHP"],
-    askMeAbout: ["web dev", "tech", "app dev", "photography"],
-    technologies: {
-        backEnd: {
-            js: ["Node", "Fastify", "Express"],
-        },
-        mobileApp: {
-            native: ["Android Development"]
-        },
-        devOps: ["AWS", "Docker🐳", "Route53", "Nginx"],
-        databases: ["mongo", "MySql", "sqlite"],
-        misc: ["Firebase", "Socket.IO", "selenium", "open-cv", "php", "SuiteApp"]
-    },
-    architecture: ["Serverless Architecture", "Progressive web applications", "Single page applications"],
-    currentFocus: "No Focus point at this time",
-    funFact: "There are two ways to write error-free programs; only the third one works"
-};
-```
+- **BRCA**: Breast Invasive Carcinoma. This type represents cancers that have spread from the original site in the breast to surrounding tissues. It's the most common type of breast cancer.
 
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> 😊</em>
+- **COAD**: Colon Adenocarcinoma. A cancer of the colon which is characterized by a malignant growth formed from the glandular structures in the epithelial tissue.
 
----
-<!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-2%2C664%20hrs%202%20mins-blue)
+- **LUAD**: Lung Adenocarcinoma. This type is a form of non-small cell lung cancer, which tends to grow slower than other lung cancers. It is found in the outer parts of the lung and is the most common type of lung cancer among non-smokers.
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-1729-blue)
+- **PRAD**: Prostate Adenocarcinoma. This cancer develops in the prostate gland and is the most common form of prostate cancer. It begins in the gland cells of the prostate.
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.0%20million%20lines%20of%20code-blue)
+### Objective
 
-**🐱 My GitHub Data** 
+Our primary objective is to build and evaluate machine learning models that can accurately predict the type of cancer based on the gene expression profiles provided in the dataset. By achieving this, we aim to contribute to the broader efforts in cancer diagnosis and treatment, potentially offering insights that could guide personalized medicine approaches.
 
-> 📦 185.7 kB Used in GitHub's Storage 
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 21 Public Repositories 
- > 
-> 🔑 23 Private Repositories 
- > 
-**I'm an Early 🐤** 
+### Approach
 
-```text
-🌞 Morning                758 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.44 % 
-🌆 Daytime                1767 commits        ██████████░░░░░░░░░░░░░░░   40.66 % 
-🌃 Evening                1284 commits        ███████░░░░░░░░░░░░░░░░░░   29.54 % 
-🌙 Night                  537 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.36 % 
-```
-📅 **I'm Most Productive on Sunday** 
+To accomplish our goal, we will:
+- Perform an exploratory data analysis (EDA) to understand the distribution of variables, the structure of our dataset, and any patterns or anomalies present.
+- Preprocess the data to make it suitable for machine learning models, including normalization, handling missing values, and feature selection.
+- Train various machine learning models, comparing their performance to identify the most effective approach for cancer type prediction.
+- Evaluate the models using appropriate metrics to assess their accuracy and robustness.
 
-```text
-Monday                   542 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.47 % 
-Tuesday                  602 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.85 % 
-Wednesday                709 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.31 % 
-Thursday                 579 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.32 % 
-Friday                   455 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.47 % 
-Saturday                 554 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.75 % 
-Sunday                   905 commits         █████░░░░░░░░░░░░░░░░░░░░   20.82 % 
-```
+By the end of this project, we hope to have a robust predictive model that showcases the power of machine learning in the field of bioinformatics, specifically for cancer type prediction through RNA-seq gene expression data analysis.
 
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Dubai
-
-💬 Programming Languages: 
-TypeScript               5 hrs 24 mins       ████████████████████░░░░░   79.50 % 
-Python                   35 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.63 % 
-SQL                      14 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.53 % 
-Vue.js                   10 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.64 % 
-.env file                7 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.75 % 
-
-🔥 Editors: 
-WebStorm                 6 hrs 3 mins        ██████████████████████░░░   89.20 % 
-PyCharm                  36 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.04 % 
-DataGrip                 7 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.75 % 
-
-💻 Operating System: 
-Mac                      6 hrs 47 mins       █████████████████████████   100.00 % 
-```
-
-**I Mostly Code in JavaScript** 
-
-```text
-JavaScript               32 repos            ███████████░░░░░░░░░░░░░░   45.71 % 
-Java                     7 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   10.00 % 
-CSS                      6 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   08.57 % 
-Python                   4 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   05.71 % 
-TypeScript               4 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   05.71 % 
-```
-
-
-
-
- Last Updated on 03/04/2024 00:23:36 UTC
-<!--END_SECTION:waka-->
-
-**These Readme stats are generated using github action [awesome-readme-stats](https://github.com/anmol098/waka-readme-stats)**
-
-NOTE: Top languages does not indicate my skill level or anything like that. It is just a metric of which languages have been hosted by me on GitHub based on the usage across repositories. There are others which I haven't put up on GitHub.

@@ -3,7 +3,6 @@
 <p><em>Medical Advisor <a href="https://eureka-digital.co.uk/">Eureka Digital
 </a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
-
 # Machine Learning for Cancer Prediction Using RNA-seq Data
 
 ## Project Overview
@@ -32,7 +31,7 @@ The dataset underpinning our project consists of RNA-seq Gene Expression data ac
 
 Our primary objective is to build and evaluate machine learning models that can accurately predict the type of cancer based on the gene expression profiles provided in the dataset. By achieving this, we aim to contribute to the broader efforts in cancer diagnosis and treatment, potentially offering insights that could guide personalized medicine approaches.
 
-### Approach
+### Approach 
 
 To accomplish our goal, we will:
 - Perform an exploratory data analysis (EDA) to understand the distribution of variables, the structure of our dataset, and any patterns or anomalies present.
